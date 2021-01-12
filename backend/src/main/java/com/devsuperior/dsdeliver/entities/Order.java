@@ -10,7 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinColumns;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
@@ -104,6 +103,16 @@ public class Order implements Serializable {
 		this.status = status;
 	}
 
+	
+	public Double getTotal() {
+		double sum = 0.0;
+		for (Product p : products) {
+//		    sum = sum + p.getPrice();
+		    sum += p.getPrice();
+		}
+		return sum;
+	}
+	
 	public Set<Product> getProducts() {
 		return products;
 	}
