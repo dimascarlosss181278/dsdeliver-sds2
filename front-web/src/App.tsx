@@ -1,12 +1,12 @@
-import React from 'react';
 import './App.css';
+import Counter from './Counter';
 
 function App() {
   return (
-    <div>
-      <h1>Olá galera</h1>
+    <div >
+      <Counter />
     </div>
   );
 }
 
-export default App; 
+export default App;
