@@ -1,6 +1,9 @@
 import { useState } from "react";
 
+//funcao que cria componente
 function Counter() {
+
+//Estado do componente 
   const [counter, setCounter] = useState(0);
 
   const handleIncrease = () => {
