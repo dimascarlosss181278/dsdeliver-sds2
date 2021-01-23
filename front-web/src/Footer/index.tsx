@@ -8,7 +8,7 @@ import { ReactComponent as InstagramIcon } from './instagram.svg';
 function Footer() {
     return (
         //criar a classe footer
-        <footer className="maind-footer">
+        <footer className="main-footer">
             App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
             {/* cria classe footer */}
             <div className="footer-icons">

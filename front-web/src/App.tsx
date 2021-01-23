@@ -1,13 +1,11 @@
 import './App.css';
-import Counter from './Counter';
-import Home from './Home';
-import Navbar from './Navibar';
+import Routes from './Routes';
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Home /> 
+      {/* <Navbar /> */}
+      <Routes />
     </>
   );
 }
